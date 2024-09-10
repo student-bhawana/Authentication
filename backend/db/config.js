@@ -1,7 +1,7 @@
 const mongoose = require("mongoose")
 const db = async () => {
     try {
-        await mongoose.connect("mongodb+srv://bhawanakeshwani2001:25092001bhawana@cluster0.engig.mongodb.net/", {
+        await mongoose.connect("mongodb+srv://bhawanakeshwani2001:25092001bhawana@cluster0.engig.mongodb.net/task", {
             useUnifiedTopology: true,
         })
         console.log("database is connected");
