@@ -16,7 +16,7 @@ const Dashboard = () => {
     const fetchData = async (token) => {
 
         try {
-            const result = await axios.get('http://localhost:5000/api/userdata', {
+            const result = await axios.get('https://authentication-backend-uz8u.onrender.com/api/userdata', {
                 headers: {
                     'authorization': token
                 }

@@ -25,7 +25,7 @@ const Signup = () => {
         try {
             e.preventDefault()
             setLoading(true)
-            const result = await axios.post('http://localhost:5000/api/signup', formData)
+            const result = await axios.post('https://authentication-backend-uz8u.onrender.com/api/signup', formData)
             if (result.data.success) {
                 navigate('/login')
                 toast.success(result.data.message, {

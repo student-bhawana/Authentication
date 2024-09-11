@@ -15,7 +15,7 @@ const Login = () => {
         try {
             e.preventDefault()
             setLoading(true)
-            const result = await axios.post('http://localhost:5000/api/login', { email, password })
+            const result = await axios.post('https://authentication-backend-uz8u.onrender.com/api/login', { email, password })
 
             if (result.data.success) {
                 localStorage.setItem('userToken', result.data.data.token)
